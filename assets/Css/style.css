@@ -1344,6 +1344,7 @@ textarea {
   font-weight: 500;
   text-align: justify;
   padding: 10px;
+  width: 85%;
 }
 
 .div__p-margin {
@@ -1594,5 +1595,47 @@ textarea {
   }
   .grid-container2 {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .principal-text h1 {
+    font-size: 50.7px;
+  }
+  .figure-image img {
+    margin-top: 29px;
+  }
+  .primary-text h2 {
+    font-size: 35px;
+  }
+  .description-container {
+    width: 90%;
+  }
+  .description-container div p {
+    font-size: 20px;
+    width: 190.1px;
+  }
+  .description-container div h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 39px;
+  }
+  .objetives-container {
+    margin-top: -90px;
+    margin-bottom: -90px;
+  }
+  .div__h2 h3 {
+    margin-left: -59px;
+  }
+  .main__line--bg {
+    margin-top: 80px;
+  }
+  .margin-div {
+    padding: 20px;
+  }
+  .line-margin {
+    margin-top: 10px;
+  }
+  .lines {
+    margin-top: 90px;
+  }
+  .main__line--bg {
+    margin-top: 25px;
   }
 }
