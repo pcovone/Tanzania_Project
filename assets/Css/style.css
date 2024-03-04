@@ -1200,6 +1200,231 @@ textarea {
   line-height: normal;
 }
 
+.dropdown-select {
+  cursor: pointer;
+}
+
+.empowerment-logos {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.empowerment-logos img {
+  width: 10%;
+}
+
+.slider {
+  max-width: 100rem;
+  height: 36rem;
+  margin: 0;
+  position: relative;
+  scale: 0.9;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 31rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 43.3%;
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 4.4rem;
+  width: 4.4rem;
+  font-size: 2.65rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: var(--color-secondary);
+  opacity: 1;
+}
+
+.header_principal img {
+  width: 100%;
+}
+
+.header_principal {
+  margin: 15px;
+}
+
+.responsible_title h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 49.9px;
+  justify-content: center;
+}
+
+.article-main-text {
+  padding: 0 50px;
+  margin-bottom: 67px;
+}
+
+.article-main-text p {
+  width: 92.3vw;
+  margin: 0.85em 0;
+  display: block;
+}
+
+.text-frame {
+  background-color: #b6f1b391;
+  display: flex;
+  padding: 30px 50px;
+  line-height: 1.6rem;
+  font-size: 15px;
+  height: 100%;
+}
+
+.text-frame li {
+  list-style: disc;
+}
+
+.text-frame__division-2 {
+  margin: 80px 10px;
+}
+
+.experience-serengeti img {
+  width: 100%;
+}
+
+.experience-serengeti {
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.experience-serengeti--text {
+  width: 50%;
+  padding: 40px;
+}
+
+.experience-serengeti--text h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.experience-serengeti__park {
+  display: flex;
+  padding: 41px;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  gap: 24px;
+}
+
+.experience-serengeti__park--img img {
+  width: 50%;
+  margin: auto;
+}
+
+.experience-serengeti__park--img,
+.experience-img {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-content: stretch;
+}
+
+.experience-serengeti__park--text {
+  width: 50%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.conservation-area--text img {
+  width: 55%;
+}
+
+.experience-tarangire__park--img img {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-content: stretch;
+}
+
+.eyasi__p {
+  padding: 0 50px;
+}
+
+.experience-img img {
+  width: 80%;
+  margin: auto;
+}
+
 /* -------------------------------------- */
 /* @media screen and (max-width: 768px) {
   .nav-links {
@@ -1637,5 +1862,63 @@ textarea {
   }
   .main__line--bg {
     margin-top: 25px;
+  }
+  .header_principal img {
+    width: 100%;
+  }
+  .responsible_title h1 {
+    height: 10vh;
+    font-size: 29.9px;
+  }
+  div:first-of-type + .div__p {
+    inline-size: 100%;
+  }
+  .text-frame {
+    flex-direction: column;
+  }
+  .text-frame__division-1,
+  .text-frame__division-2 {
+    padding: 20px;
+  }
+  .experience-serengeti--text {
+    width: 100%;
+  }
+  .experience-serengeti__park--text {
+    width: 100%;
+    padding: 0px;
+  }
+  .experience-serengeti__park--img img {
+    width: 100%;
+    margin: auto;
+  }
+  .experience-serengeti__park--img {
+    width: 90%;
+  }
+  .conservation-area--text img {
+    width: 100%;
+  }
+  .article-main-text {
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+  .text-frame__division-2,
+  .text-frame {
+    padding: 0;
+  }
+  .experience-serengeti,
+  .experience-serengeti__park {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header_principal {
+    margin: 0;
+  }
+  .experience-serengeti__park--text {
+    width: 100%;
+    padding: 10px;
+  }
+  .experience-img img {
+    width: 170%;
+    margin: auto;
   }
 }
